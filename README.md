@@ -185,3 +185,33 @@ Source/
 - [ ] 점수 시스템 연동
 - [ ] 팀 기반 UI 처리 및 리스폰 제어
 
+------------------------------------
+
+네이밍.
+기본적으로는 Unreal Engine 스타일 가이드를 따르되, 멤버 변수와 함수에 대해서는 통일된 규칙 필요.
+
+# 팀 네이밍 컨벤션 (블래스터 협업 프로젝트)
+
+## 1. 클래스명
+- AActor 계열: `AWeapon`, `AProjectile`
+- UObject 계열: `UWeaponComponent`, `UInventoryManager`
+
+## 2. 변수명
+- 불리언: `bIsAiming`, `bShouldFire`
+- 숫자/카운터: `Ammo`, `MaxAmmo`, `CurrentMagazine`
+- 오브젝트 참조: `WeaponMesh`, `OwningCharacter`
+
+## 3. 함수명
+- 명령형 동사 사용: `FireWeapon()`, `StartReload()`
+- Getter/Setter: `GetAmmo()`, `SetWeaponType()`
+
+## 4. 네이밍 케이스
+- 클래스, 함수, 변수: `PascalCase`
+- 지역 변수: `camelCase` (선택 사항)
+
+## 5. GAS 관련 명명
+- `GA_` → 능력 클래스 (`GA_RifleFire`)
+- `GE_` → Gameplay Effect (`GE_ExplosionDamage`)
+- `Cue_` → Gameplay Cue (`Cue_BloodImpact`)
+
+
